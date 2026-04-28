@@ -1,6 +1,6 @@
 class AppError {
   message: string;
-  statusCode?: number;
+  statusCode: number;
 
   constructor(message: string, statusCode: number = 400) {
     this.message = message;
