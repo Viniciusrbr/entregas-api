@@ -5,7 +5,7 @@ import { prisma } from '@/database/prisma';
 class DeliveriesController {
   async create(req: Request, res: Response) {
     const bodySchema = z.object({
-      user_id: z.string().uuid(),
+      user_id: z.uuid(),
       description: z.string()
     });
 
